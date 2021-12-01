@@ -1,6 +1,6 @@
 {
   "name": "@ghostedbread/graphics-js",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Graphics For Node",
   "main": "script.js",
   "scripts": {

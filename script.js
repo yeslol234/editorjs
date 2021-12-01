@@ -1,6 +1,6 @@
 /**
  * GraphicsJS - Graphics For Node
- * @version 1.0.5
+ * @version 1.0.6
  * @lisence MIT
  * @author ghostedbread
  * feedback email: graphicsjsf@gmail.com
@@ -12,6 +12,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.ANSIColor = ANSIColor;
 exports.ANSILabel = ANSILabel;
+exports.ANSIError = ANSIError;
 exports.YELLOW_T = exports.RESETTEXT_ = exports.RED_T = exports.GREEN_T = exports.BLUE_T = exports.MAGENTA_T = exports.CYAN_T = exports.WHITE_T = exports.BLACK_T = void 0;
 var RESETTEXT_ = '\u001b[0m';
 exports.RESETTEXT_ = RESETTEXT_;
@@ -59,6 +60,10 @@ function ANSILabel(text, bgcode, fgcode) {
 
     console.log(result)
 }
-function ANSIError() {
-    
+/**
+ * 
+ * @param {string} errorType Error Type To Show.
+ */
+function ANSIError(errorType) {
+    console.log(`\u001b[31mAn Error Has Occured: ${errorType}${RESETTEXT_}`)
 }
